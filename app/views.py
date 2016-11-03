@@ -25,7 +25,8 @@ def do_login():
     name = request.form['name']
     pass_word = request.form['passWd']
 
-    if User.query.filter_by(Name=name, PssWd=pass_word):
+    if User.query.filter_by(Name=name, PssWd=pass_word).all():
+        session['userName'] = name
         return render_template('login.html', name=name, passWd=pass_word)
     else:
         return render_template('login.html')
