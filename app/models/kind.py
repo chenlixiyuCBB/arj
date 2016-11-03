@@ -1,8 +1,9 @@
-from .. import db
+from app import db
 
 
 class Kind(db.Model):
     __tablename__ = "kind"
+    extend_existing = True
 
     Id = db.Column(db.Integer, primary_key=True)
     Name = db.Column(db.VARCHAR(20))  # TODO larger

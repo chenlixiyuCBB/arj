@@ -1,4 +1,4 @@
-from .. import db
+from app import db
 
 
 class Product_Order(db.Model):

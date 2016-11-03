@@ -1,8 +1,9 @@
-from .. import db
+from app import db
 
 
 class Admin(db.Model):
     __tablename__ = "admin"
+    extend_existing = True
 
     Id = db.Column(db.Integer, primary_key=True)
     Name = db.Column(db.VARCHAR(20), unique=True)
