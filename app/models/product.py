@@ -1,7 +1,7 @@
 from .. import db
 
 
-class Product(db.model):
+class Product(db.Model):
     __tablename__ = "product"
     extend_existing = True
 

@@ -1,7 +1,7 @@
 from .. import db
 
 
-class Kind(db.model):
+class Kind(db.Model):
     __tablename__ = "kind"
 
     Id = db.Column(db.Integer, primary_key=True)

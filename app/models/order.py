@@ -1,7 +1,7 @@
 from .. import db
 
 
-class Order(db.model):
+class Order(db.Model):
     __tablename__ = "order"
     extend_existing = True
 

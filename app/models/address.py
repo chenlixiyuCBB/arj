@@ -1,7 +1,7 @@
 from .. import db
 
 
-class Address(db.model):
+class Address(db.Model):
     __tablename__ = "address"
     extend_existing = True
 
