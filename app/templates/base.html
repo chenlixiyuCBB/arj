@@ -15,12 +15,12 @@
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- CSS Style -->
-    <link rel="stylesheet" href="{{ url_for("static","css/bootstrap.min.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ url_for("static","css/slider.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ url_for("static","css/owl.carousel.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ url_for("static","css/owl.theme.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ url_for("static","css/font-awesome.css") }}" type="text/css">
-    <link rel="stylesheet" href="{{ url_for("static","css/style.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/bootstrap.min.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/slider.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/owl.carousel.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/owl.theme.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/font-awesome.css") }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for("static",filename="css/style.css") }}" type="text/css">
 </head>
 <body>
 <div class="page">
@@ -552,52 +552,21 @@
                         <input class="search-bar-input" placeholder="Search entire store here..." type="text" value=""
                                name="search" id="search">
                         <input class="search-bar-submit" type="submit" value="">
-                        <span class="search-icon"><img src="images/search-icon.png" alt="search-icon"></span>
+                        <span class="search-icon"><img src="{{ url_for("static",filename="images/search-icon.png") }}"
+                                                       alt="search-icon"></span>
                     </form>
                 </div>
             </div>
         </div>
     </nav>
     <!-- end nav -->
-{% block content %}
+    {% block base_contents %}
 
-{% endblock %}
+    {% endblock %}
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="inner">
-                <div class="brand-logo">
-                    <div class="slider-items-products">
-                        <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
-                            <div class="slider-items slider-width-col6">
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo1.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo2.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo3.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo4.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo5.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo6.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo1.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                                <!-- Item -->
-                                <div class="item"><a href="#x"><img src="images/b-logo4.png" alt="Image"></a></div>
-                                <!-- End Item -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="footer-middle">
                     <div class="col-md-3 col-sm-12 col-xs-12">
                         <div class="footer-column-1">
@@ -789,11 +758,11 @@
     <!--right-side-content hidden1-->
 </div>
 <!-- JavaScript -->
-<script type="text/javascript" src="{{ url_for("static","js/jquery.min.js") }}"></script>
-<script type="text/javascript" src="{{ url_for("static","js/bootstrap.min.js") }}"></script>
-<script type="text/javascript" src="{{ url_for("static","js/common.js") }}"></script>
-<script type="text/javascript" src="{{ url_for("static","js/slider.js") }}"></script>
-<script type="text/javascript" src="{{ url_for("static","js/owl.carousel.min.js") }}"></script>
+<script type="text/javascript" src="{{ url_for("static",filename="js/jquery.min.js") }}"></script>
+<script type="text/javascript" src="{{ url_for("static",filename="js/bootstrap.min.js") }}"></script>
+<script type="text/javascript" src="{{ url_for("static",filename="js/common.js") }}"></script>
+<script type="text/javascript" src="{{ url_for("static",filename="js/slider.js") }}"></script>
+<script type="text/javascript" src="{{ url_for("static",filename="js/owl.carousel.min.js") }}"></script>
 <script type="text/javascript">
     //<![CDATA[
     jQuery(function () {

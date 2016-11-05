@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}登陆/注册{% endblock %}
+
+{% block base_contents %}
+    <section class="main-container col1-layout">
+        <div class="main container">
+            <div class="account-login">
+                <div class="page-title">
+                    <h2>登陆/注册</h2>
+                </div>
+                <fieldset class="col2-set">
+                    <legend>登陆/注册</legend>
+                    <div class="col-1 new-users">
+                        <strong>注册</strong>
+                        <div class="content">
+                            <ul class="form-list">
+                                <li>
+                                    <label>电子邮箱 <span class="required">*</span></label>
+                                    <br>
+                                    <input type="text" title="Email Address" class="input-text required-entry" value=""
+                                           name="login[username]">
+                                </li>
+                                <li>
+                                    <label for="pass">密码 <span class="required">*</span></label>
+                                    <br>
+                                    <input type="password" title="Password" id="pass"
+                                           class="input-text required-entry validate-password" name="login[password]">
+                                </li>
+                                <li>
+                                    <label for="pass">请重复输入密码 <span class="required">*</span></label>
+                                    <br>
+                                    <input type="password" title="Password" id="pass"
+                                           class="input-text required-entry validate-password" name="login[password2]">
+                                </li>
+                            </ul>
+                            <p class="required">* 必填项</p>
+                            <div class="buttons-set">
+                                <button id="send2" name="send" type="submit" class="button login"><span>注册</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 registered-users"><strong>登陆</strong>
+                        <div class="content">
+                            <ul class="form-list">
+                                <li>
+                                    <label>电子邮箱<span class="required">*</span></label>
+                                    <br>
+                                    <input type="text" title="Email Address" class="input-text required-entry" value=""
+                                           name="login[username]">
+                                </li>
+                                <li>
+                                    <label for="pass">密码<span class="required">*</span></label>
+                                    <br>
+                                    <input type="password" title="Password" id="pass"
+                                           class="input-text required-entry validate-password" name="login[password]">
+                                </li>
+                            </ul>
+                            <p class="required">* 必填项</p>
+                            <div class="buttons-set">
+                                <button id="send2" name="send" type="submit" class="button login"><span>登陆</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </section>
+{% endblock %}

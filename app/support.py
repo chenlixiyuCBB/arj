@@ -14,4 +14,5 @@ def money_wrapper(money):
         money = float(money)
     except:
         return money
-    return "￥ %4.2f" % money
+    return "¥ %.2f" % money
+

@@ -7,14 +7,15 @@ from app import db
 
 
 # 进入主页
-@app.route("/", methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
 def index():
-    return render_template('index.html')
+    return render_template('base.html')
 
 
 # 用户登录模块
-@app.route("/login/", method=['POST', 'GET'])
+@app.route("/login/", methods=['POST', 'GET'])
 def login():
+    return render_template('login.html')
     if request.method == 'POST':
         do_login()
     else:
@@ -60,3 +61,4 @@ def go_to_log_up():
 
 def is_log_up_valid(user):
     return True
+
